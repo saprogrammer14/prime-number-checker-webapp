@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(209, 91%, 46%);
+}
+
+h1 {
+    text-align: center;
+    border: 1px solid red;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+@mixin card-style($bHeight,$bWidth,$inputWidth) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .buttons{
+        margin-top: 50px;
+        button{
+            width: $bWidth;
+            height: $bHeight;
+        }
+    }
+    input{
+        width: $inputWidth;
+        height: 35px;
+    }
+    
+}
+.card {
+    border: 1px solid red;
+    height: 200px;
+    width: 300px;
+    @include card-style(30px,100px,80%);
+    
+
+}
+
+@media(max-width:630px) {
+    .card {
+        border: 1px solid red;
+        height: 200px;
+        width: 200px;
+        @include card-style(30px,90px,90%);
+    }
+}
