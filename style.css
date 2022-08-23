@@ -5,12 +5,15 @@
 }
 
 body {
-  background-color: hsl(209deg, 91%, 46%);
+  background-color: hsl(225.1deg, 94.4%, 21%);
 }
 
 h1 {
   text-align: center;
-  border: 1px solid red;
+  height: 50px;
+  font-size: 3.4em;
+  color: hsl(225.1deg, 94.4%, 50%);
+  text-shadow: 3px 4px 9px hsl(225.1deg, 94.4%, 50%);
 }
 
 .wrapper {
@@ -21,13 +24,14 @@ h1 {
 }
 
 .card {
-  border: 1px solid red;
   height: 200px;
   width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: hsl(225.1deg, 94.4%, 35%);
+  box-shadow: 3px 4px 13px black;
 }
 .card .buttons {
   margin-top: 50px;
@@ -43,13 +47,14 @@ h1 {
 
 @media (max-width: 630px) {
   .card {
-    border: 1px solid red;
     height: 200px;
     width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: hsl(225.1deg, 94.4%, 35%);
+    box-shadow: 3px 4px 13px black;
   }
   .card .buttons {
     margin-top: 50px;
