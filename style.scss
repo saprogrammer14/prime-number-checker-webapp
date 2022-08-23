@@ -10,18 +10,20 @@ body {
 
 h1 {
     text-align: center;
-    // border: 1px solid red;
-    height: 50px;
+    height: 128px;
     font-size: 3.4em;
     color: hsl(225.1, 94.4%, 50%);
     text-shadow: 3px 4px 9px hsl(225.1, 94.4%, 50%);
+    // border: 1px solid yellow;
 }
 
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 90vh;
+    // border: 1px solid red;
 }
 
 @mixin card-style($bHeight,$bWidth,$inputWidth) {
@@ -36,16 +38,28 @@ h1 {
         button{
             width: $bWidth;
             height: $bHeight;
+            background-color: hsl(225.1, 94.4%, 50%);
+            border-style: none;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+
         }
     }
     input{
         width: $inputWidth;
         height: 35px;
+        background-color: hsl(225.1, 94.4%, 50%);
+        border-style: none;
+        color: white;
+        padding: 0 7px;
+        
+        
+
     }
     
 }
 .card {
-    // border: 1px solid red;
     height: 200px;
     width: 300px;
     @include card-style(30px,100px,80%);
@@ -58,5 +72,14 @@ h1 {
         height: 200px;
         width: 200px;
         @include card-style(30px,90px,90%);
+    }
+}
+
+footer{
+    background-color: rgba(0,0,0,0.2);
+    padding: 20px 0;
+    p{
+        text-align: center;
+        color: #ffffff1a;
     }
 }
